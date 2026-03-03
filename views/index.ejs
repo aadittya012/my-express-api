@@ -8,20 +8,26 @@
 </head>
 <body>
     <h1>Quora Posts</h1>
+
     <% for(post of posts){ %>
         <div class="post">
             <h3 class="user">@ <%= post.username %></h3>
-            <h3 class="content"> <%=post.content %></h3>
-            <a class="btnn" href="http://localhost:3000/posts/<%= post.id %>">See in detail</a>
-            <a class="btnn" href="https://my-express-api-1-oiln.onrender.com/posts/<%= post.id %>/edit">Edit</a>
+            <h3 class="content"><%= post.content %></h3>
+
+            <!-- ✅ Relative Routes -->
+            <a class="btnn" href="/posts/<%= post.id %>">See in detail</a>
+            <a class="btnn" href="/posts/<%= post.id %>/edit">Edit</a>
+
             <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
                  <button class="dlbtn">DELETE</button>
             </form>
         </div>
     <% } %>
-    </br>
 
- <a class="btn" href="http://localhost:3000/posts/new">Create new post</a>
+    <br>
+
+    <!-- ✅ Relative Route -->
+    <a class="btn" href="/posts/new">Create new post</a>
 
 </body>
 </html>
