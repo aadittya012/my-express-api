@@ -13,7 +13,7 @@
             <h3 class="user">@ <%= post.username %></h3>
             <h3 class="content"> <%=post.content %></h3>
             <a class="btnn" href="http://localhost:3000/posts/<%= post.id %>">See in detail</a>
-            <a class="btnn" href="http://localhost:3000/posts/<%= post.id %>/edit">Edit</a>
+            <a class="btnn" href="https://my-express-api-1-oiln.onrender.com/posts/<%= post.id %>/edit">Edit</a>
             <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
                  <button class="dlbtn">DELETE</button>
             </form>
