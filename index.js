@@ -12,8 +12,8 @@ app.use(methodOverride("_method"));
 
 app.use(express.urlencoded({extended:true}));
 
-app.listen(port,()=>{
-    console.log(`server is listening ${port}`);
+app.listen(PORT, () => {
+  console.log("Server running on port " + PORT);
 });
  let posts=[
         {
