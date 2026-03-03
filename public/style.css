@@ -1,0 +1,100 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f1f2f2;
+  padding: 40px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #b92b27;
+  margin-bottom: 30px;
+}
+
+/* Post card */
+.post {
+  background: white;
+  padding: 20px 25px;
+  margin: 20px auto;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+}
+
+/* Username */
+.user {
+  color: #636466;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Content */
+.content {
+  color: #282829;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Link buttons */
+.btnn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #2e69ff;
+  padding: 8px 14px;
+  margin-right: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+ 
+}
+
+.btnn:hover {
+  background: #1d4ed8;
+}
+
+/* Delete button */
+.dlbtn {
+  margin-top: 10px;
+  background: #e02424;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dlbtn:hover {
+  background: #b91c1c;
+}
+
+/* Create post button */
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  background: #10b981;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #059669;
+}
