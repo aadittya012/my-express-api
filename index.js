@@ -11,7 +11,9 @@ app.use(express.static(path.join(__dirname,"/public")));
 app.use(methodOverride("_method"));
 
 app.use(express.urlencoded({extended:true}));
-
+app.get("/", (req, res) => {
+  res.redirect("/posts");
+});
 app.listen(PORT, () => {
   console.log("Server running on port " + PORT);
 });
