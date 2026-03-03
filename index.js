@@ -14,9 +14,7 @@ app.use(express.urlencoded({extended:true}));
 app.get("/", (req, res) => {
   res.redirect("/posts");
 });
-app.listen(PORT, () => {
-  console.log("Server running on port " + PORT);
-});
+
  let posts=[
         {
             id:uuidv4(),
@@ -74,5 +72,8 @@ app.delete("/posts/:id",(req,res)=>{
     let{id}=req.params;
      posts = posts.filter((p)=>id!==p.id);
    res.redirect("/posts");
-})
+});
+app.listen(PORT, () => {
+  console.log("Server running on port " + PORT);
+});
     
